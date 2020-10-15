@@ -7,7 +7,8 @@ def doCalc(operator, int1, int2):
         return (int1 - int2)
     elif operator == "/":
         return (int1 / int2)
-     
+    elif operator =="^":
+        return pow(int1, int2)     
 
 with open("calc.txt", "r") as f:
     lines = f.read().splitlines()
